@@ -1,30 +1,23 @@
-# React + TypeScript + Vite
+# Calculadora de Propinas
 
-This template provides a minimal setup to get React working in Vite with HMR and some ESLint rules.
+Este proyecto es una calculadora de propinas desarrollada con React, TypeScript y TailwindCSS. La aplicación permite calcular propinas basándose en el monto total y el porcentaje de propina deseado. También hace uso de una base de datos local para guardar configuraciones o historial de cálculos.
 
-Currently, two official plugins are available:
+## Tecnologías Utilizadas
 
-- [@vitejs/plugin-react](https://github.com/vitejs/vite-plugin-react/blob/main/packages/plugin-react/README.md) uses [Babel](https://babeljs.io/) for Fast Refresh
-- [@vitejs/plugin-react-swc](https://github.com/vitejs/vite-plugin-react-swc) uses [SWC](https://swc.rs/) for Fast Refresh
+- **React**: Para construir la interfaz de usuario.
+- **TypeScript**: Para añadir tipado estático al código JavaScript.
+- **TailwindCSS**: Para el diseño y estilizado de la aplicación.
 
-## Expanding the ESLint configuration
+## Características
 
-If you are developing a production application, we recommend updating the configuration to enable type aware lint rules:
+- **Componentes Reutilizables**: La aplicación está dividida en componentes reutilizables para facilitar el mantenimiento y escalabilidad.
+- **Base de Datos Local**: Guarda datos localmente para persistencia.
+- **Hooks Personalizados**: Implementa hooks para manejar lógica de estado y efectos.
+- **Helper Functions**: Funciones auxiliares para operaciones comunes.
+- **Typed Components**: Componentes y funciones tipadas usando TypeScript para mejorar la robustez del código.
 
-- Configure the top-level `parserOptions` property like this:
+## Instalación
 
-```js
-export default {
-  // other rules...
-  parserOptions: {
-    ecmaVersion: 'latest',
-    sourceType: 'module',
-    project: ['./tsconfig.json', './tsconfig.node.json'],
-    tsconfigRootDir: __dirname,
-  },
-}
-```
-
-- Replace `plugin:@typescript-eslint/recommended` to `plugin:@typescript-eslint/recommended-type-checked` or `plugin:@typescript-eslint/strict-type-checked`
-- Optionally add `plugin:@typescript-eslint/stylistic-type-checked`
-- Install [eslint-plugin-react](https://github.com/jsx-eslint/eslint-plugin-react) and add `plugin:react/recommended` & `plugin:react/jsx-runtime` to the `extends` list
+1. Clona este repositorio:
+   ```sh
+   git clone https://github.com/juanchyquintana/calculador-propinas-ts.git
